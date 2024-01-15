@@ -1,0 +1,45 @@
+section#hero {
+  display: grid;
+  grid-template-rows: auto 1fr 128px;
+  justify-items: center;
+}
+
+section#hero p.slogan {
+  color: var(--dark-grey);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 160%;
+  letter-spacing: 6.4px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+section#hero p.slogan span {
+  padding: 8px 12px;
+  background-color: var(--fuchsia);
+  color: var(--background);
+}
+
+section#hero img.hero-image {
+  grid-row: 2 / 4;
+  grid-column: 1 / 2;
+  width: 100%;
+
+}
+
+section#hero .contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--dark-grey);
+  color: white;
+  margin: 0 auto;
+  padding: 12px 24px;
+  border-radius: 40px;
+  font-weight: 900;
+  letter-spacing: 1.6px;
+  text-transform: uppercase;
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  place-self: start;
+}
