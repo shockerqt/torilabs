@@ -28,8 +28,7 @@
   <header class="navbar-mobile">
     <nav>
       <img src="logo-black.svg" class="navbar-logo-mobile" alt="Tori Labs Logo">
-      <button class="p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#navMenu"
-        aria-controls="navMenuToggle">
+      <button id="hamburger" class="p-1" type="button" data-bs-target="#navMenu" aria-controls="navMenuToggle">
         <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="27" height="3" fill="#EA1A7F" />
           <rect y="7" width="27" height="3" fill="#EA1A7F" />
@@ -39,7 +38,7 @@
 
     </nav>
 
-    <div class="offcanvas offcanvas-start" id="navMenu" aria-labelledby="navMenuContainer">
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="navMenu" aria-labelledby="navMenuContainer">
       <div class="menu-header">
         <img src="logo-black.svg" class="navbar-logo-mobile" alt="Tori Labs Logo">
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
@@ -56,10 +55,12 @@
               data-bs-dismiss="offcanvas">Servicios</button>
           </li>
           <li>
-            <a href="#portfolio">Trabajos</a>
+            <button onclick="window.location.href='#portfolio';focus(document.querySelector('#portfolio'))"
+              data-bs-dismiss="offcanvas">Trabajos</button>
           </li>
           <li>
-            <a href="#contact">Contáctanos</a>
+            <button onclick="window.location.href='#contact';focus(document.querySelector('#contact'))"
+              data-bs-dismiss="offcanvas">Contáctanos</button>
           </li>
         </menu>
         <div class="menu-slogan">
@@ -343,8 +344,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-  <script src="index.js"></script>
+  <script src="gsap.js"></script>
   <script src="slideshow.js"></script>
+  <script src="menu.js"></script>
 </body>
 
 </html>
