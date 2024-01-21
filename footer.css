@@ -27,7 +27,7 @@ footer .footer-right {
   justify-self: end;
 }
 
-footer .footer-right select {
+.lang-selector select {
   background-color: transparent;
   color: white;
   border: none;
@@ -38,4 +38,20 @@ footer .footer-right select {
   letter-spacing: 1.28px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.lang-selector.mobile select {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .lang-selector select {
+    display: none;
+  }
+
+  .lang-selector.mobile select {
+    display: block;
+    color: var(--light-grey);
+    margin: 0 auto;
+  }
 }

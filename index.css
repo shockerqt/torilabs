@@ -34,7 +34,8 @@ body {
   }
 }
 
-ul {
+ul,
+menu {
   list-style: none;
   padding: 0;
 }
@@ -70,6 +71,5 @@ p {
 
 section {
   position: relative;
-  margin-bottom: 96px;
-  min-height: 600px;
+  min-height: 500px;
 }

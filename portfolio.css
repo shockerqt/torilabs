@@ -1,3 +1,7 @@
+section#portfolio {
+  margin-bottom: 80px;
+}
+
 section#portfolio .portfolio-header {
   padding-left: 32px;
 }
@@ -27,6 +31,11 @@ section#portfolio .portfolio-toggle button {
   text-transform: uppercase;
   cursor: pointer;
   position: relative;
+  transition: border-radius 0.15s ease-in-out;
+}
+
+section#portfolio .portfolio-toggle button:hover {
+  border-radius: 8px;
 }
 
 section#portfolio .portfolio-toggle button.glide__bullet--active~button {
@@ -47,13 +56,21 @@ section#portfolio .slideshow {
   user-select: none;
 }
 
+@media screen and (max-width: 820px) {
+  section#portfolio .portfolio-header {
+    padding-left: 0px;
+  }
+
+  section#portfolio .portfolio-toggle {
+    display: none;
+  }
+}
+
 section#portfolio .slideshow ul {
   display: flex;
   align-items: center;
   margin-top: 32px;
   margin-bottom: 32px;
-  /* overflow-x: auto; */
-  gap: 18px;
 }
 
 section#portfolio .slideshow-item {
@@ -68,6 +85,8 @@ section#portfolio .slideshow-item {
   padding-top: 24px;
   padding-left: 32px;
 }
+
+section#portfolio .slideshow-item:not(.glide__slide--active) {}
 
 section#portfolio .slideshow-item h3.slideshow-item-title {
   display: flex;

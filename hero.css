@@ -2,6 +2,7 @@ section#hero {
   display: grid;
   grid-template-rows: auto 1fr 128px;
   justify-items: center;
+  min-height: calc(100vh - 182px);
 }
 
 section#hero p.slogan {
@@ -12,6 +13,7 @@ section#hero p.slogan {
   letter-spacing: 6.4px;
   text-transform: uppercase;
   text-align: center;
+  grid-row: 1 / 2;
 }
 
 section#hero p.slogan span {
@@ -35,10 +37,15 @@ section#hero .contact {
   grid-row: 3 / 4;
   grid-column: 1 / 2;
   place-self: start;
+  transition: background-color 0.15s ease-in-out;
+}
+
+section#hero .contact:hover {
+  background-color: var(--fuchsia);
+
 }
 
 section#hero .hero-container {
-  position: relative;
   grid-row: 2 / 4;
   grid-column: 1 / 2;
   width: 100%;
@@ -46,7 +53,33 @@ section#hero .hero-container {
 }
 
 section#hero .hero-container img {
-  position: absolute;
-  left: 0;
   width: 100%;
+}
+
+
+section#hero img#hero-image-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  section#hero {
+
+    min-height: calc(100vh - 92px);
+  }
+
+
+  section#hero .hero-container img#hero-image {
+    display: none;
+  }
+
+  section#hero .hero-container img#hero-image-mobile {
+    display: block;
+  }
+
+  section#hero p.slogan {
+    font-size: 24px;
+    line-height: 170%;
+    letter-spacing: 4.8px;
+  }
+
 }

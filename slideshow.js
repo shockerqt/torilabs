@@ -7,7 +7,7 @@ var glide = new Glide('.slideshow', {
   autoplay: 3000,
   breakpoints: {
     800: {
-      perView: 1
+      perView: 1.2
     },
   }
 })

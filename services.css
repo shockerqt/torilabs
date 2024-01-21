@@ -2,6 +2,7 @@ section#services {
   display: flex;
   gap: 24px;
   position: relative;
+  margin-bottom: 80px;
 }
 
 section#services .services-left-half {
@@ -45,6 +46,7 @@ section#services .service-item-title {
 section#services .service-item-title h3 {
   font-size: 22px;
   font-weight: 600;
+  margin: 0;
 }
 
 section#services .service-item-body {
@@ -55,6 +57,7 @@ section#services .services-image {
   flex-basis: 470px;
   flex-grow: 0;
   flex-shrink: 1;
+  z-index: 1;
 }
 
 section#services .services-image>img {
@@ -90,4 +93,122 @@ section#services .trusted-by-logos {
   align-items: center;
   gap: 60px;
   width: 678px;
+}
+
+section#services .trusted-by-mobile {
+  display: none;
+}
+
+section#services .services-decorations {
+  top: -120px;
+}
+
+@media screen and (max-width: 768px) {
+  section#services {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section#services .services-left-half {
+    flex-basis: auto;
+  }
+
+  section#services .services-header {
+    padding-left: 0;
+  }
+
+  section#services .services-description {
+    margin-top: 16px;
+    margin-bottom: 48px;
+  }
+
+  section#services .service-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  section#services .service-list.second-row {
+    margin-top: 24px;
+    padding-left: 0;
+  }
+
+  section#services .service-list li {
+    width: 100%;
+  }
+
+  section#services .service-item-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+  }
+
+  section#services .service-item-title h3 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  section#services .service-item-body {
+    font-size: 14px;
+  }
+
+  section#services .services-image {
+    flex-basis: 470px;
+    flex-grow: 0;
+    flex-shrink: 1;
+  }
+
+  section#services .services-image>img {
+    width: 100%;
+    max-width: 470px;
+    object-fit: contain;
+  }
+
+  section#services .trusted-by {
+    display: none;
+    /* padding-left: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    bottom: 12px; */
+  }
+
+  section#services .trusted-by div {
+    background-color: var(--fuchsia);
+    border-radius: 40px;
+  }
+
+  section#services .trusted-by-text {
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: -0.56px;
+    padding: 12px 32px;
+  }
+
+  section#services .trusted-by-logos {
+    padding: 0 80px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    width: 678px;
+  }
+
+  section#services .trusted-by-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  section#services .trusted-by-logos-mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0 80px;
+  }
+
+  section#services .services-decorations {
+    top: 0px;
+  }
 }
