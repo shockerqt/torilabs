@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tori Labs</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="navbar.css">
   <link rel="stylesheet" href="hero.css">
@@ -16,6 +18,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/@glidejs/glide@3.6.0/dist/css/glide.core.min.css">
 </head>
 
 <body>
@@ -40,7 +43,11 @@
     <section id="hero">
       <p class="slogan">Code Leaders Industry <span class="slogan-accent">Rebels</span></p>
       <h1 class="hidden">TORI LABS</h1>
-      <img src="hero.svg" alt="Tori Labs Hero" class="hero-image">
+      <div class="hero-container">
+        <img src="main-decorations.svg" alt="Decoraciones" class="main-decorations" data-speed="0.85">
+        <img src="hero.svg" alt="Tori Labs Hero" class="hero-image">
+      </div>
+
       <a href="#contact" class="contact">
         <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
           <path
@@ -49,6 +56,8 @@
         </svg> Contáctanos</a>
     </section>
     <section id="services">
+      <img style="top: -120px" src="services-decorations.svg" alt="Decoraciones" class="section-decorations"
+        data-speed="0.85">
       <div class="services-left-half">
         <div class="services-header">
           <h2 class="section-title">Servicios</h2>
@@ -104,11 +113,25 @@
         </ul>
       </div>
       <div class="services-image">
-
         <img src="services.png" alt="Servicios">
       </div>
+
+      <div class="trusted-by">
+        <div class="trusted-by-text">
+          Trusted by
+        </div>
+        <div class="trusted-by-logos">
+          <img src="assets/trusted-by-0.png" alt="Logo de empresa">
+          <img src="assets/trusted-by-1.png" alt="Logo de empresa">
+
+        </div>
+      </div>
+
     </section>
+
     <section id="portfolio">
+      <img style="top: -200px" src="portfolio-decorations.svg" alt="Decoraciones" class="section-decorations"
+        data-speed="0.85">
       <div class="portfolio-header">
         <h2 class="section-title">Cómo trabajamos?</h2>
         <p class="portfolio-description">
@@ -118,75 +141,79 @@
         </p>
       </div>
 
-      <div class="portfolio-toggle">
-        <button>
-          Design
-        </button>
-        <div class="button-separator"></div>
-        <button class="active">
-          Code
-        </button>
-        <div class="button-separator"></div>
-        <button>
-          Review
-        </button>
-        <div class="button-separator"></div>
-        <button>
-          Deploy
-        </button>
-      </div>
 
       <div class="slideshow">
-        <div class="slideshow-item">
-          <h3 class="slideshow-item-title">Design</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua.
-          </p>
-          <div class="slideshow-item-image">
-            <img src="design.jpeg" alt="Code">
-          </div>
+        <div class="portfolio-toggle" data-glide-el="controls[nav]">
+          <button data-glide-dir="=0">
+            Design
+          </button>
+          <button data-glide-dir="=1">
+            Code
+          </button>
+          <button data-glide-dir="=2">
+            Review
+          </button>
+          <button data-glide-dir="=3">
+            Deploy
+          </button>
         </div>
+        <div class="glide__track" data-glide-el="track">
+          <ul>
+            <li class="slideshow-item">
+              <h3 class="slideshow-item-title">Design</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.
+              </p>
+              <div class="slideshow-item-image">
+                <img src="design.jpeg" alt="Code">
+              </div>
+            </li>
 
-        <div class="slideshow-item">
-          <h3 class="slideshow-item-title">Code</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua.
-          </p>
-          <div class="slideshow-item-image">
-            <img src="code.jpeg" alt="Code">
-          </div>
-        </div>
+            <li class="slideshow-item">
+              <h3 class="slideshow-item-title">Code</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.
+              </p>
+              <div class="slideshow-item-image">
+                <img src="code.jpeg" alt="Code">
+              </div>
+            </li>
 
-        <div class="slideshow-item">
-          <h3 class="slideshow-item-title">Review</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua.
-          </p>
-          <div class="slideshow-item-image">
-            <img src="design.jpeg" alt="Code">
-          </div>
-        </div>
+            <li class="slideshow-item">
+              <h3 class="slideshow-item-title">Review</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.
+              </p>
+              <div class="slideshow-item-image">
+                <img src="design.jpeg" alt="Code">
+              </div>
+            </li>
 
-        <div class="slideshow-item">
-          <h3 class="slideshow-item-title">Deploy</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore
-            magna aliqua.
-          </p>
-          <div class="slideshow-item-image">
-            <img src="code.jpeg" alt="Code">
-          </div>
+            <li class="slideshow-item">
+              <h3 class="slideshow-item-title">Deploy</h3>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore
+                magna aliqua.
+              </p>
+              <div class="slideshow-item-image">
+                <img src="code.jpeg" alt="Code">
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
     <section id="contact">
+      <img style="top: -250px;" src="contact-decorations.svg" alt="Decoraciones" class="section-decorations"
+        data-speed="0.85">
+
       <div class="contact-container">
         <div class="contact-left-panel">
           <img src="contact.png" alt="Imagen de contacto">
@@ -230,16 +257,6 @@
 
     </section>
 
-
-    <!-- Decorations -->
-    <div data-speed="0.2" class="decoration-1">
-      <svg width="32" height="32" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M14.9239 0L14.9255 1.03045C14.9334 6.66271 18.0666 11.8257 23.0592 14.4331L24 14.9243L22.8265 14.9366C17.2437 14.9952 12.146 18.1208 9.56168 23.0699L9.07573 24L8.99487 22.2737C8.74752 16.9951 5.76649 12.2276 1.12964 9.69353L0 9.07613L1.17106 9.059C6.50696 8.98133 11.4079 6.10147 14.0727 1.47777L14.9243 0.00039833L14.9239 0Z"
-          fill="black" />
-      </svg>
-    </div>
-
   </div>
   <footer>
     <div class="footer-container">
@@ -261,7 +278,9 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   <script src="index.js"></script>
+  <script src="slideshow.js"></script>
 </body>
 
 </html>

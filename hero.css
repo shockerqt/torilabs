@@ -20,13 +20,6 @@ section#hero p.slogan span {
   color: var(--background);
 }
 
-section#hero img.hero-image {
-  grid-row: 2 / 4;
-  grid-column: 1 / 2;
-  width: 100%;
-
-}
-
 section#hero .contact {
   display: flex;
   align-items: center;
@@ -42,4 +35,18 @@ section#hero .contact {
   grid-row: 3 / 4;
   grid-column: 1 / 2;
   place-self: start;
+}
+
+section#hero .hero-container {
+  position: relative;
+  grid-row: 2 / 4;
+  grid-column: 1 / 2;
+  width: 100%;
+  z-index: -1;
+}
+
+section#hero .hero-container img {
+  position: absolute;
+  left: 0;
+  width: 100%;
 }

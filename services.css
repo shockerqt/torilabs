@@ -1,6 +1,7 @@
 section#services {
   display: flex;
   gap: 24px;
+  position: relative;
 }
 
 section#services .services-left-half {
@@ -59,4 +60,34 @@ section#services .services-image {
 section#services .services-image>img {
   width: 100%;
   object-fit: contain;
+}
+
+section#services .trusted-by {
+  padding-left: 32px;
+  position: absolute;
+  display: flex;
+  gap: 40px;
+  bottom: 12px;
+}
+
+
+section#services .trusted-by div {
+  background-color: var(--fuchsia);
+  border-radius: 40px;
+}
+
+section#services .trusted-by-text {
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: -0.56px;
+  padding: 12px 32px;
+}
+
+section#services .trusted-by-logos {
+  padding: 0 80px;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  width: 678px;
 }

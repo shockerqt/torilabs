@@ -12,6 +12,7 @@ section#portfolio .portfolio-toggle {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 80px;
   margin-bottom: 32px;
 }
 
@@ -25,39 +26,45 @@ section#portfolio .portfolio-toggle button {
   letter-spacing: 1.44px;
   text-transform: uppercase;
   cursor: pointer;
+  position: relative;
 }
 
-section#portfolio .portfolio-toggle button.active~button {
+section#portfolio .portfolio-toggle button.glide__bullet--active~button {
   background-color: var(--light-grey);
 }
 
-section#portfolio .portfolio-toggle div.button-separator {
+section#portfolio .portfolio-toggle button:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  right: 100%;
+  top: calc(50% - 1px);
   height: 2px;
   width: 80px;
-  background-color: var(--dark-grey);
-}
-
-section#portfolio .portfolio-toggle button.active~div.button-separator {
-  background-color: var(--light-grey);
+  background-color: inherit;
 }
 
 section#portfolio .slideshow {
+  user-select: none;
+}
+
+section#portfolio .slideshow ul {
   display: flex;
   align-items: center;
   margin-top: 32px;
   margin-bottom: 32px;
-  overflow-x: auto;
-  gap: 48px;
+  /* overflow-x: auto; */
+  gap: 18px;
 }
 
 section#portfolio .slideshow-item {
+  user-select: none;
   border-radius: 8px;
   background: #FFF;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
   overflow: hidden;
-  width: 500px;
-  flex-shrink: 0;
-  flex-grow: 0;
+  /* width: 500px; */
+  /* flex-shrink: 0;
+  flex-grow: 0; */
   padding-top: 24px;
   padding-left: 32px;
 }
@@ -67,10 +74,12 @@ section#portfolio .slideshow-item h3.slideshow-item-title {
   align-items: center;
   text-transform: uppercase;
   margin-bottom: 12px;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 section#portfolio .slideshow-item h3.slideshow-item-title::before {
-  content: "12";
+  content: "";
   display: block;
   width: 20px;
   height: 26px;
