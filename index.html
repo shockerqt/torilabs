@@ -10,14 +10,14 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="navbar.css">
-  <link rel="stylesheet" href="hero.css">
-  <link rel="stylesheet" href="services.css">
-  <link rel="stylesheet" href="portfolio.css">
-  <link rel="stylesheet" href="contact.css">
-  <link rel="stylesheet" href="decorations.css">
-  <link rel="stylesheet" href="footer.css">
+  <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/hero.css">
+  <link rel="stylesheet" href="styles/services.css">
+  <link rel="stylesheet" href="styles/portfolio.css">
+  <link rel="stylesheet" href="styles/contact.css">
+  <link rel="stylesheet" href="styles/decorations.css">
+  <link rel="stylesheet" href="styles/footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,900&display=swap" rel="stylesheet">
@@ -28,7 +28,7 @@
 <body>
   <header class="navbar-mobile">
     <nav>
-      <img src="logo-black.svg" class="navbar-logo-mobile" alt="Tori Labs Logo">
+      <img src="assets/logo-black.svg" class="navbar-logo-mobile" alt="Tori Labs Logo">
       <button id="hamburger" class="p-1" type="button" data-bs-target="#navMenu" aria-controls="navMenuToggle">
         <svg width="27" height="17" viewBox="0 0 27 17" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="27" height="3" fill="#EA1A7F" />
@@ -41,7 +41,7 @@
 
     <div class="offcanvas offcanvas-start" tabindex="-1" id="navMenu" aria-labelledby="navMenuContainer">
       <div class="menu-header">
-        <img src="logo-black.svg" class="navbar-logo-mobile" alt="Tori Labs Logo">
+        <img src="assets/logo-black.svg" class="navbar-logo-mobile" alt="Tori Labs Logo">
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
           data-bs-target="#navMenu"></button>
       </div>
@@ -85,7 +85,7 @@
         <li><a href="#services">Servicios</a></li>
         <li>
           <a href="/">
-            <img src="logo.svg" alt="Tori Labs Logo">
+            <img src="assets/logo.svg" alt="Tori Labs Logo">
           </a>
         </li>
         <li><a href="#portfolio">Trabajos</a></li>
@@ -96,13 +96,13 @@
 
   <div class="root">
     <section id="hero">
-      <img style="top: 62px" src="main-decorations.svg" alt="Decoraciones" class="section-decorations"
+      <img style="top: 62px" src="assets/main-decorations.svg" alt="Decoraciones" class="section-decorations"
         data-speed="0.85">
       <p class="slogan">Code Leaders Industry <span class="slogan-accent">Rebels</span></p>
       <h1 class="hidden">TORI LABS</h1>
       <div class="hero-container">
-        <img src="hero.svg" id="hero-image" alt="Tori Labs Hero" class="hero-image">
-        <img src="hero-mobile.svg" id="hero-image-mobile" alt="Tori Labs Hero" class="hero-image">
+        <img src="assets/hero.svg" id="hero-image" alt="Tori Labs Hero" class="hero-image">
+        <img src="assets/hero-mobile.svg" id="hero-image-mobile" alt="Tori Labs Hero" class="hero-image">
       </div>
 
       <a href="#contact" class="contact">
@@ -113,7 +113,7 @@
         </svg> Contáctanos</a>
     </section>
     <section id="services">
-      <img src="services-decorations.svg" alt="Decoraciones" class="section-decorations services-decorations"
+      <img src="assets/services-decorations.svg" alt="Decoraciones" class="section-decorations services-decorations"
         data-speed="0.85">
       <div class="services-left-half">
         <div class="services-header">
@@ -125,7 +125,7 @@
         <ul class="service-list">
           <li>
             <div class="service-item-title">
-              <img src="service-0.svg" alt="Ícono de globo">
+              <img src="assets/service-0.svg" alt="Ícono de globo">
               <h3>Soluciones web</h3>
             </div>
             <p class="service-item-body">
@@ -135,7 +135,7 @@
           </li>
           <li>
             <div class="service-item-title">
-              <img src="service-0.svg" alt="Ícono de globo">
+              <img src="assets/service-1.svg" alt="Ícono de globo">
               <h3>Apps mobile</h3>
             </div>
             <p class="service-item-body">
@@ -147,7 +147,7 @@
         <ul class="service-list second-row">
           <li>
             <div class="service-item-title">
-              <img src="service-0.svg" alt="Ícono de globo">
+              <img src="assets/service-2.svg" alt="Ícono de globo">
               <h3>Apps desktop</h3>
             </div>
             <p class="service-item-body">
@@ -157,7 +157,7 @@
           </li>
           <li>
             <div class="service-item-title">
-              <img src="service-0.svg" alt="Ícono de globo">
+              <img src="assets/service-3.svg" alt="Ícono de globo">
               <h3>IA personalizada</h3>
             </div>
             <p class="service-item-body">
@@ -188,13 +188,13 @@
       </div>
 
       <div class="services-image">
-        <img src="services.png" alt="Servicios">
+        <img src="assets/services-avatar.png" alt="Servicios">
       </div>
 
     </section>
 
     <section id="portfolio">
-      <img style="top: -200px" src="portfolio-decorations.svg" alt="Decoraciones" class="section-decorations"
+      <img style="top: -200px" src="assets/portfolio-decorations.svg" alt="Decoraciones" class="section-decorations"
         data-speed="0.85">
       <div class="portfolio-header">
         <h2 class="section-title">Cómo trabajamos?</h2>
@@ -231,7 +231,7 @@
                 magna aliqua.
               </p>
               <div class="slideshow-item-image">
-                <img src="design.jpeg" alt="Code">
+                <img src="assets/work-0.jpeg" alt="Code">
               </div>
             </li>
 
@@ -243,7 +243,7 @@
                 magna aliqua.
               </p>
               <div class="slideshow-item-image">
-                <img src="code.jpeg" alt="Code">
+                <img src="assets/work-1.jpeg" alt="Code">
               </div>
             </li>
 
@@ -255,7 +255,7 @@
                 magna aliqua.
               </p>
               <div class="slideshow-item-image">
-                <img src="design.jpeg" alt="Code">
+                <img src="assets/work-2.jpeg" alt="Code">
               </div>
             </li>
 
@@ -267,7 +267,7 @@
                 magna aliqua.
               </p>
               <div class="slideshow-item-image">
-                <img src="code.jpeg" alt="Code">
+                <img src="assets/work-3.jpeg" alt="Code">
               </div>
             </li>
           </ul>
@@ -275,12 +275,12 @@
       </div>
     </section>
     <section id="contact">
-      <img style="top: -250px;" src="contact-decorations.svg" alt="Decoraciones" class="section-decorations"
+      <img style="top: -250px;" src="assets/contact-decorations.svg" alt="Decoraciones" class="section-decorations"
         data-speed="0.85">
 
       <div class="contact-container">
         <div class="contact-left-panel">
-          <img src="contact.png" alt="Imagen de contacto">
+          <img src="assets/contact-avatar.png" alt="Imagen de contacto">
         </div>
 
         <div class="contact-right-panel">
@@ -289,17 +289,24 @@
             <ul>
               <li>
                 <a class="social-item shadow" href="https://www.facebook.com/torilabs" target="_blank">
-                  <img src="instagram.svg" alt="facebook">
+                  <img src="assets/social-ig.svg" alt="Instagram">
                 </a>
               </li>
               <li>
                 <a class="social-item shadow" href="https://www.instagram.com/torilabs" target="_blank">
-                  <img src="instagram.svg" alt="Instagram">
+                  <svg viewBox="0 0 25 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M5.44173 7.11111V24H0.108398V7.11111H5.44173ZM0.108398 2.19556C0.108398 0.951111 1.17507 0 2.77507 0C4.37507 0 5.37951 0.951111 5.44173 2.19556C5.44173 3.44 4.44618 4.44444 2.77507 4.44444C1.17507 4.44444 0.108398 3.44 0.108398 2.19556ZM24.9973 24H19.664C19.664 24 19.664 15.7689 19.664 15.1111C19.664 13.3333 18.7751 11.5556 16.5528 11.52H16.4817C14.3306 11.52 13.4417 13.3511 13.4417 15.1111C13.4417 15.92 13.4417 24 13.4417 24H8.1084V7.11111H13.4417V9.38667C13.4417 9.38667 15.1573 7.11111 18.6062 7.11111C22.1351 7.11111 24.9973 9.53778 24.9973 14.4533V24Z" />
+                  </svg>
+
                 </a>
               </li>
               <li>
                 <a class="social-item shadow" href="https://www.linkedin.com/company/torilabs" target="_blank">
-                  <img src="instagram.svg" alt="Linkedin">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 462.799">
+                    <path fill="currentColor"
+                      d="M403.229 0h78.506L310.219 196.04 512 462.799H354.002L230.261 301.007 88.669 462.799h-78.56l183.455-209.683L0 0h161.999l111.856 147.88L403.229 0zm-27.556 415.805h43.505L138.363 44.527h-46.68l283.99 371.278z" />
+                  </svg>
                 </a>
               </li>
             </ul>
@@ -327,7 +334,7 @@
       <div class="footer-center">
 
 
-        <img src="footer-logo.svg" alt="Tori Labs Logo">
+        <img src="assets/logo-footer.svg" alt="Tori Labs Logo">
         <p>
           Copyright © 2023, Tori Laboratories SpA. All Rights Reserved.
         </p>
@@ -344,9 +351,9 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-  <script src="gsap.js"></script>
-  <script src="slideshow.js"></script>
-  <script src="menu.js"></script>
+  <script src="scripts/gsap.js"></script>
+  <script src="scripts/slideshow.js"></script>
+  <script src="scripts/menu.js"></script>
 </body>
 
 </html>
