@@ -94,7 +94,7 @@ section#services .trusted-by-logos {
   padding: 0 80px;
   height: 40px;
   gap: 60px;
-  width: 678px;
+  width: 728px;
 }
 
 section#services .trusted-by-logos>img {
@@ -117,7 +117,7 @@ section#services .trusted-by-logos-mobile {
 }
 
 section#services .services-decorations {
-  top: 0px;
+  top: -200px;
 }
 
 @media screen and (max-width: 768px) {
@@ -189,5 +189,9 @@ section#services .services-decorations {
   section#services .trusted-by-mobile {
     display: block;
     width: 100%;
+  }
+
+  section#services .services-decorations {
+    top: 0;
   }
 }
