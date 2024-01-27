@@ -37,7 +37,6 @@ section#hero .contact {
   grid-row: 3 / 4;
   grid-column: 1 / 2;
   place-self: start;
-  transition: background-color 0.15s ease-in-out;
 }
 
 section#hero .contact:hover {
