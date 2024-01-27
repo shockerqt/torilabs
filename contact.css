@@ -77,16 +77,17 @@ section#contact form.contact-form label {
   color: var(--dark-grey);
 }
 
+
+section#contact button.submit-button:hover {
+  background-color: var(--light-grey);
+}
+
 section#contact button.submit-button {
   padding: 12px 36px;
   border-radius: 8px;
   color: white;
   background: var(--dark-grey);
   cursor: pointer;
-}
-
-section#contact button.submit-button:hover {
-  background-color: var(--light-grey);
 }
 
 section#contact button.submit-button:disabled {

@@ -28,12 +28,13 @@ section#services .service-list.second-row {
   padding-left: 52px;
 }
 
-section#services .service-list li {
+section#services ul.service-list>li {
   border-radius: 8px;
   background: #FFF;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
   padding: 12px 32px;
   width: 300px;
+  height: 175px;
 }
 
 section#services .service-item-title {
@@ -74,25 +75,30 @@ section#services .trusted-by {
 }
 
 
-section#services .trusted-by div {
+section#services .trusted-by>div {
   background-color: var(--fuchsia);
   border-radius: 40px;
+  display: flex;
+  align-items: center;
 }
 
-section#services .trusted-by-text {
+section#services .trusted-by div>p {
   color: white;
-  font-size: 28px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.56px;
-  padding: 12px 32px;
+  padding: 0 32px;
 }
 
 section#services .trusted-by-logos {
   padding: 0 80px;
-  display: flex;
-  align-items: center;
+  height: 40px;
   gap: 60px;
   width: 678px;
+}
+
+section#services .trusted-by-logos>img {
+  height: 24px;
 }
 
 section#services .trusted-by-mobile {
@@ -101,6 +107,17 @@ section#services .trusted-by-mobile {
 
 section#services .services-decorations {
   top: -120px;
+}
+
+section#services .trusted-by-logos-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 0 80px;
+}
+
+section#services .services-decorations {
+  top: 0px;
 }
 
 @media screen and (max-width: 768px) {
@@ -133,7 +150,7 @@ section#services .services-decorations {
     padding-left: 0;
   }
 
-  section#services .service-list li {
+  section#services ul.service-list>li {
     width: 100%;
   }
 
@@ -167,48 +184,10 @@ section#services .services-decorations {
 
   section#services .trusted-by {
     display: none;
-    /* padding-left: 0;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    bottom: 12px; */
-  }
-
-  section#services .trusted-by div {
-    background-color: var(--fuchsia);
-    border-radius: 40px;
-  }
-
-  section#services .trusted-by-text {
-    color: white;
-    font-size: 28px;
-    font-weight: 700;
-    letter-spacing: -0.56px;
-    padding: 12px 32px;
-  }
-
-  section#services .trusted-by-logos {
-    padding: 0 80px;
-    display: flex;
-    align-items: center;
-    gap: 60px;
-    width: 678px;
   }
 
   section#services .trusted-by-mobile {
     display: block;
     width: 100%;
-  }
-
-  section#services .trusted-by-logos-mobile {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    padding: 0 80px;
-  }
-
-  section#services .services-decorations {
-    top: 0px;
   }
 }
