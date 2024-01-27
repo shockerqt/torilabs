@@ -21,7 +21,7 @@ section#portfolio .portfolio-toggle {
 }
 
 section#portfolio .portfolio-toggle button {
-  background-color: var(--dark-grey);
+  background-color: var(--grey-600);
   padding: 8px 32px;
   border-radius: 40px;
   color: white;
@@ -33,12 +33,16 @@ section#portfolio .portfolio-toggle button {
   position: relative;
 }
 
-section#portfolio .portfolio-toggle button:hover {
-  border-radius: 8px;
+section#portfolio .portfolio-toggle button.glide__bullet--active~button {
+  background-color: var(--grey-400);
 }
 
-section#portfolio .portfolio-toggle button.glide__bullet--active~button {
-  background-color: var(--light-grey);
+section#portfolio .portfolio-toggle button:hover {
+  background-color: var(--grey-500);
+}
+
+section#portfolio .portfolio-toggle button.glide__bullet--active~button:hover {
+  background-color: var(--grey-300);
 }
 
 section#portfolio .portfolio-toggle button:not(:first-child)::before {
