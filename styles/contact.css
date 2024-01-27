@@ -95,13 +95,14 @@ section#contact button.submit-button {
   padding: 12px 36px;
   border-radius: 8px;
   color: white;
-  background: var(--dark-grey);
+  background: var(--fuchsia);
   cursor: pointer;
 }
 
 section#contact button.submit-button:disabled {
-  color: var(--grey);
-  background: var(--light-grey);
+  /* color: var(--grey); */
+  color: white;
+  background: var(--dark-grey);
   cursor: unset;
 }
 
